@@ -21,6 +21,9 @@ import os
 jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
+song_list = {
+    'through the fire and flames' : ['https://www.youtube.com/watch?v=0jgrCKhxE1s', 5,3,0,1]
+}
 
 
 class MainHandler(webapp2.RequestHandler):
