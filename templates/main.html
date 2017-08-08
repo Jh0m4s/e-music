@@ -7,23 +7,23 @@
   <style>
 
   body{
-    background-color: green;
+    background-color: black;
   }
   .container{
     border-radius: 25px;
     margin: auto;
-    margin-top: 10px;
-    width: 100%;
+    margin-top: 70px;
+    width: 600px;
     height: 500px;
     background-color: white;
   }
 
-  h1 {
-    font-size: 100px;
-    margin-bottom: 0px;
-    text-align: center;
-
+  img {
+    width: 500px;
+    display: block;
+    margin: auto;
   }
+
   table {
     margin: auto;
     text-align: centers;
@@ -31,7 +31,9 @@
   }
 
   legend {
+    font-weight: 10px;
     text-align: center;
+    font-size: 40px;
   }
 
   fieldset {
@@ -46,11 +48,9 @@
   }
   </style>
   <body>
-      <img src='dancing.gif' class="dancingLeft">
-      <img src='dancing.gif' class="dancingRight">
       <div class="container">
-        <h1>e-music</h1>
-        <table class="tittle">
+        <img src="logo.png">
+        <!--<table class="tittle">
           <tr>
             <th>Anxious</th>
             <th>Angry</th>
@@ -64,6 +64,7 @@
             <th>Focused</th>
           </tr>
         </table>
+      -->
         <form method="post">
           <fieldset>
             <legend>Rate Your Mood</legend>
@@ -71,6 +72,7 @@
             <div class="moodsText">Happiness</div>
             <label>1</label><input type="radio" name="happinessMood">
             <label>2</label><input type="radio" name="happinessMood">
+            <label>3</label><input type="radio" name="happinessMood">
             <label>4</label><input type="radio" name="happinessMood">
             <label>5</label><input type="radio" name="happinessMood">
 
