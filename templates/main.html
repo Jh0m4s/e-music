@@ -5,58 +5,98 @@
     <title>e-music</title>
   </head>
   <style>
+
   body{
-    background-image: url("https://thumbs.dreamstime.com/z/vinyl-music-records-background-fake-labels-45529307.jpg")
+    background-image: url("background.jpg");
   }
+
   .container{
+    border-radius: 25px;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 70px;
     width: 600px;
-    height: 300px;
+    height: 500px;
     background-color: white;
   }
 
-  h1 {
-    font-size: 100px;
-    margin-bottom: 0px;
-    text-align: center;
-
+  img {
+    width: 500px;
+    display: block;
+    margin: auto;
+    float:
   }
+
   table {
     margin: auto;
     text-align: centers;
     font-size: 30px;
   }
 
-  legend {
+  legend{
+    font-weight: 10px;
     text-align: center;
+    font-size: 40px;
   }
 
+  fieldset {
+    text-align: center;
+  }
+  .dancingLeft {
+    float: left;
+  }
+
+  .dancingRight {
+    float: right;
+  }
   </style>
   <body>
-    <div class="container">
-      <h1>e-music</h1>
-      <table class="tittle">
-        <tr>
-          <th>Anxious</th>
-          <th>Angry</th>
-        </tr>
-        <tr>
-          <th>Blah</th>
-          <th>Hyper</th>
-        </tr>
-        <tr>
-          <th>Depressed</th>
-          <th>Focused</th>
-        </tr>
-      </table>
-      <form>
-        <fieldset>
-          <legend>Rate Your Mood</legend>
-          Happiness:
-          <label>1</label><input type="radio" >
-        </fieldset>
-      </form>
-    </div>
+      <div class="container">
+        <img src="logo.png">
+        <!--<table class="tittle">
+          <tr>
+            <th>Anxious</th>
+            <th>Angry</th>
+          </tr>
+          <tr>
+            <th>Blah</th>
+            <th>Hyper</th>
+          </tr>
+          <tr>
+            <th>Depressed</th>
+            <th>Focused</th>
+          </tr>
+        </table>
+      -->
+        <form method="post">
+          <fieldset>
+            <legend>Rate Your Mood</legend>
+
+            <div class="moodsText">Happiness</div>
+            <label>1</label><input type="radio" name="happinessMood">
+            <label>2</label><input type="radio" name="happinessMood">
+            <label>3</label><input type="radio" name="happinessMood">
+            <label>4</label><input type="radio" name="happinessMood">
+            <label>5</label><input type="radio" name="happinessMood">
+
+            <div class="moodsText">Sadness</div>
+            <label>1</label><input type="radio" name="sadnessMood">
+            <label>2</label><input type="radio" name="sadnessMood">
+            <label>3</label><input type="radio" name="sadnessMood">
+            <label>4</label><input type="radio" name="sadnessMood">
+            <label>5</label><input type="radio" name="sadnessMood">
+
+            <div class="moodsText">Paste</div>
+            <label>1</label><input type="radio" name="PasteMood">
+            <label>2</label><input type="radio" name="PasteMood">
+            <label>3</label><input type="radio" name="PasteMood">
+            <label>4</label><input type="radio" name="sadnessMood">
+            <label>5</label><input type="radio" name="sadnessMood">
+
+            <br><br>
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+          </fieldset>
+        </form>
+      </div>
   </body>
 </html>
