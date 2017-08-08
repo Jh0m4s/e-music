@@ -5,14 +5,16 @@
     <title>e-music</title>
   </head>
   <style>
+
   body{
-    background-image: url("https://thumbs.dreamstime.com/z/vinyl-music-records-background-fake-labels-45529307.jpg")
+    background-color: green;
   }
   .container{
+    border-radius: 25px;
     margin: auto;
-    margin-top: 200px;
-    width: 600px;
-    height: 700px;
+    margin-top: 10px;
+    width: 100%;
+    height: 500px;
     background-color: white;
   }
 
@@ -35,54 +37,62 @@
   fieldset {
     text-align: center;
   }
+  .dancingLeft {
+    float: left;
+  }
+
+  .dancingRight {
+    float: right;
+  }
   </style>
   <body>
-    <div class="container">
-      <h1>e-music</h1>
-      <table class="tittle">
-        <tr>
-          <th>Anxious</th>
-          <th>Angry</th>
-        </tr>
-        <tr>
-          <th>Blah</th>
-          <th>Hyper</th>
-        </tr>
-        <tr>
-          <th>Depressed</th>
-          <th>Focused</th>
-        </tr>
-      </table>
-      <form method="post">
-        <fieldset>
-          <legend>Rate Your Mood</legend>
+      <img src='dancing.gif' class="dancingLeft">
+      <img src='dancing.gif' class="dancingRight">
+      <div class="container">
+        <h1>e-music</h1>
+        <table class="tittle">
+          <tr>
+            <th>Anxious</th>
+            <th>Angry</th>
+          </tr>
+          <tr>
+            <th>Blah</th>
+            <th>Hyper</th>
+          </tr>
+          <tr>
+            <th>Depressed</th>
+            <th>Focused</th>
+          </tr>
+        </table>
+        <form method="post">
+          <fieldset>
+            <legend>Rate Your Mood</legend>
 
-          <div class="moodsText">Happiness</div>
-          <label>1</label><input type="radio" name="happinessMood">
-          <label>2</label><input type="radio" name="happinessMood">
-          <label>3</label><input type="radio" name="happinessMood">
-          <label>4</label><input type="radio" name="happinessMood">
-          <label>5</label><input type="radio" name="happinessMood">
+            <div class="moodsText">Happiness</div>
+            <label>1</label><input type="radio" name="happinessMood">
+            <label>2</label><input type="radio" name="happinessMood">
+            <label>4</label><input type="radio" name="happinessMood">
+            <label>5</label><input type="radio" name="happinessMood">
 
-          <div class="moodsText">Sadness</div>
-          <label>1</label><input type="radio" name="sadnessMood">
-          <label>2</label><input type="radio" name="sadnessMood">
-          <label>3</label><input type="radio" name="sadnessMood">
-          <label>4</label><input type="radio" name="sadnessMood">
-          <label>5</label><input type="radio" name="sadnessMood">
+            <div class="moodsText">Sadness</div>
+            <label>1</label><input type="radio" name="sadnessMood">
+            <label>2</label><input type="radio" name="sadnessMood">
+            <label>3</label><input type="radio" name="sadnessMood">
+            <label>4</label><input type="radio" name="sadnessMood">
+            <label>5</label><input type="radio" name="sadnessMood">
 
-          <div class="moodsText">Paste</div>
-          <label>1</label><input type="radio" name="PasteMood">
-          <label>2</label><input type="radio" name="PasteMood">
-          <label>3</label><input type="radio" name="PasteMood">
-          <label>4</label><input type="radio" name="sadnessMood">
-          <label>5</label><input type="radio" name="sadnessMood">
+            <div class="moodsText">Paste</div>
+            <label>1</label><input type="radio" name="PasteMood">
+            <label>2</label><input type="radio" name="PasteMood">
+            <label>3</label><input type="radio" name="PasteMood">
+            <label>4</label><input type="radio" name="sadnessMood">
+            <label>5</label><input type="radio" name="sadnessMood">
 
-          <br><br>
-          <input type="submit" name="submit" value="Submit">
-          <input type="reset" name="reset" value="Reset">
-        </fieldset>
-      </form>
-    </div>
+            <br><br>
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+          </fieldset>
+        </form>
+      </div>
   </body>
 </html>
