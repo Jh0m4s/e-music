@@ -21,9 +21,32 @@ import os
 jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
-song_list = {
-    'through the fire and flames' : ['https://www.youtube.com/watch?v=0jgrCKhxE1s', 5,3,0,1]
+songs = {
+    'through the fire and flames' : ["https://www.youtube.com/watch?v=0jgrCKhxE1s", 0,3,4,5],
+    'mad world' : ["https://www.youtube.com/watch?v=4N3N1MlvVc4", 5,2,1,0],
+
 }
+
+results = [5,3,2,4]
+
+total = 0
+count = 0
+lowest_diff = 25
+#laregest_emo = 0
+for song in songs:
+    print song
+    for score in songs[song][1:]:
+        print score
+        print results[count]
+        total += abs(int(score) - int(results[count]))
+        count += 1
+    print total
+    if(total < lowest_diff):
+        lowest_diff = total
+        print('-----> ' + str(lowest_diff))
+    total = 0
+    count = 0
+
 
 
 class MainHandler(webapp2.RequestHandler):
