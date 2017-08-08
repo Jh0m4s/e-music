@@ -31,6 +31,8 @@ results = [5,3,2,4]
 
 total = 0
 count = 0
+ans = ""
+key = ""
 lowest_diff = 25
 #laregest_emo = 0
 for song in songs:
@@ -43,6 +45,10 @@ for song in songs:
     print total
     if(total < lowest_diff):
         lowest_diff = total
+        #ans = songs[0]
+        key = song
+        #print ans
+        print song
         print('-----> ' + str(lowest_diff))
     total = 0
     count = 0
