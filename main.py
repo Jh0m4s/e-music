@@ -30,7 +30,6 @@ jinja_environment = jinja2.Environment(
 #
 # }
 
-link = '<iframe width="854" height="480" src="https://www.youtube.com/embed/4N3N1MlvVc4" frameborder="0" allowfullscreen></iframe>'
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
@@ -40,7 +39,7 @@ class MainHandler(webapp2.RequestHandler):
 
     def post(self):
         r_template = jinja_environment.get_template('templates/results.html')
-        self.response.write(r_template.render(link = link))
+        self.response.write(r_template.render())
 
 
 
