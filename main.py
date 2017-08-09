@@ -6,11 +6,6 @@ import os
 jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
-songs = {
-    'through the fire and flames' : ["https://www.youtube.com/watch?v=0jgrCKhxE1s", 0,3,4,5],
-    'mad world' : ["https://www.youtube.com/watch?v=4N3N1MlvVc4", 5,2,1,0],
-
-}
 
 class Song():
   def __init__(self, name, link, ratings):
@@ -37,16 +32,23 @@ class Song():
 
 result = [1,1]
 songs = [
-song1 = Song('Can’t Stop the Feeling', 'https://youtu.be/ru0K8uYEZWw', [1,1 ]),
-song1 = Song('doesnt matter the name', 'http::ikwjes,dbfzc', [2,4])
-song1 = Song('doesnt matter the name', 'http::ikwjes,dbfzc', [2,4])
-song1 = Song('doesnt matter the name', 'http::ikwjes,dbfzc', [2,4])
+song1 = Song('Can’t Stop the Feeling', 'https://www.youtube.com/embed/gWjmyVQwgRw', [5,1,1,3]),
+song2 = Song('Opening the Gates', 'https://www.youtube.com/embed/Q1B9xShJ2kE', [2,3,5,1])
+song3 = Song('Mad World', 'https://www.youtube.com/embed/hW93CV6m-JU', [1,5,1,1])
+song4 = Song('Marble Machine', 'https://www.youtube.com/embed/IvUU8joBb1Q', [4,2,4,2])
+song5 = Song('Call Me', 'https://www.youtube.com/embed/OugHoTRceyE', [1,5,2,2])
 ]
-for song in songs:
-    song.findscore(result)
 
-song1.findscore(result)
-print song1.score
+song_name=""
+song_link=""
+lower_score=20
+
+for song in songs:
+    self.score = song.findscore(result)
+    if self.score < lower_score:
+        song_name=self.name
+        song_link=self.link
+
 
 
 
