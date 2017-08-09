@@ -1,4 +1,3 @@
-
 import webapp2
 import jinja2
 import os
@@ -29,26 +28,27 @@ class Song():
         total += i
       self.score = total / len(dif)
 
-
-result = [1,1]
-songs = [
-song1 = Song('Can’t Stop the Feeling', 'https://www.youtube.com/embed/gWjmyVQwgRw', [5,1,1,3]),
+song1 = Song('Can\'t Stop the Feeling', 'https//www.youtube.com/embed/gWjmyVQwgRw', [5,1,1,3])
 song2 = Song('Opening the Gates', 'https://www.youtube.com/embed/Q1B9xShJ2kE', [2,3,5,1])
 song3 = Song('Mad World', 'https://www.youtube.com/embed/hW93CV6m-JU', [1,5,1,1])
 song4 = Song('Marble Machine', 'https://www.youtube.com/embed/IvUU8joBb1Q', [4,2,4,2])
 song5 = Song('Call Me', 'https://www.youtube.com/embed/OugHoTRceyE', [1,5,2,2])
-]
+
+result = [1,1]
+songs = [song1, song2, song3, song4, song5]
+
+
 
 song_name=""
 song_link=""
 lower_score=20
 
 for song in songs:
-    self.score = song.findscore(result)
-    if self.score < lower_score:
-        song_name=self.name
-        song_link=self.link
-
+    song.findscore(result)
+    if song.score < lower_score:
+        lower_score = song.score
+        song_name = song.name
+        song_link = song.link
 
 
 
