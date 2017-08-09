@@ -34,21 +34,11 @@ song3 = Song('Mad World', 'https://www.youtube.com/embed/hW93CV6m-JU', [1,5,1,1]
 song4 = Song('Marble Machine', 'https://www.youtube.com/embed/IvUU8joBb1Q', [4,2,4,2])
 song5 = Song('Call Me', 'https://www.youtube.com/embed/OugHoTRceyE', [1,5,2,2])
 
-result = [1,1]
 songs = [song1, song2, song3, song4, song5]
 
 
 
-song_name=""
-song_link=""
-lower_score=20
 
-for song in songs:
-    song.findscore(result)
-    if song.score < lower_score:
-        lower_score = song.score
-        song_name = song.name
-        song_link = song.link
 
 
 
@@ -60,7 +50,28 @@ class MainHandler(webapp2.RequestHandler):
 
     def post(self):
         r_template = jinja_environment.get_template('templates/results.html')
-        self.response.write(r_template.render())
+        happy = self.request.get('happinessMood')
+        sad = self.request.get('sadnessMood')
+        focus = self.request.get('focusMood')
+        pace = self.request.get('paceMood')
+        result = [int(happy), int(sad), int(focus), int(pace)] 
+        song_name=""
+        song_link=""
+        lower_score = 20
+
+        for song in songs:
+            song.findscore(result)
+            if song.score < lower_score:
+                lower_score = song.score
+                song_name = song.name
+                song_link = song.link
+        pass_params = {
+            'song_name' : song_name,
+            'song_link' : song_link
+            }
+
+
+        self.response.write(r_template.render(pass_params))
 
 
 
