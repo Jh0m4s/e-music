@@ -5,6 +5,11 @@
     <title></title>
   </head>
   <style>
+  .container {
+      width: 1000px;
+      display: block;
+      margin: auto;
+  }
   body {
     background: url("background.gif")no-repeat center center fixed;
     background-size: cover;
@@ -13,20 +18,34 @@
   .video{
     margin: auto;
     display: block;
-    padding-top: 7em;
+    padding-top: 9em;
   }
   #emusic{
     padding-top: 10px;
     border-radius: 25px;
   }
+  #circle {
+    margin-top: 75px;
+     padding: 25px;
+     width: 25px;
+     height: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     border-radius: 100px;
+     background: white;
+     font-size: 20px;
+     float: right;
+   }
   </style>
   <body>
-    <img id="emusic" src="logo.png">
-
-  <form method = "post">
-    <div style class="video" ><iframe width="640" height="360"
-      src="https://www.youtube.com/embed/0jgrCKhxE1s" frameborder="0"
-      allowfullscreen></iframe></div>
-  </form>
+    <div class="container">
+      <img id="emusic" src="logo.png">
+      <form method = "post">
+      <div style class="video" >
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/0jgrCKhxE1s" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <a id="circle" href>text</a>
+      </form>
+  </div>
   </body>
 </html>
