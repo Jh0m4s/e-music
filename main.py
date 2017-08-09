@@ -28,7 +28,7 @@ class Song():
         total += i
       self.score = total / len(dif)
 
-song1 = Song('Can\'t Stop the Feeling', 'https//www.youtube.com/embed/gWjmyVQwgRw', [5,1,1,3])
+song1 = Song('Can\'t Stop the Feeling', 'https://www.youtube.com/embed/gWjmyVQwgRw', [5,1,1,3])
 song2 = Song('Opening the Gates', 'https://www.youtube.com/embed/Q1B9xShJ2kE', [2,3,5,1])
 song3 = Song('Mad World', 'https://www.youtube.com/embed/hW93CV6m-JU', [1,5,1,1])
 song4 = Song('Marble Machine', 'https://www.youtube.com/embed/IvUU8joBb1Q', [4,2,4,2])
@@ -54,7 +54,7 @@ class MainHandler(webapp2.RequestHandler):
         sad = self.request.get('sadnessMood')
         focus = self.request.get('focusMood')
         pace = self.request.get('paceMood')
-        result = [int(happy), int(sad), int(focus), int(pace)] 
+        result = [int(happy), int(sad), int(focus), int(pace)]
         song_name=""
         song_link=""
         lower_score = 20
