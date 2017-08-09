@@ -15,6 +15,12 @@
     background-size: cover;
     text-align: center;
   }
+  h1 {
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: fantasy;
+    padding-bottom: 0;
+  }
   .video{
     margin: auto;
     display: block;
@@ -27,15 +33,17 @@
   #thumbs_up {
     padding-left: 400px;
    }
-   
+
   </style>
   <body>
     <div class="container">
       <img id="emusic" src="logo.png">
-      <form method = "post">
     <div style class="video" >
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/0jgrCKhxE1s" frameborder="0" allowfullscreen></iframe>
+      <h1>{{ song_name }}</h1>
+
+        <iframe width="640" height="360" src="{{ song_link }}" frameborder="0" allowfullscreen></iframe>
     </div>
+    <form method = "post">
       <img id= "thumbs_up" src="thumbs_up.png" height="50" width="50" >
       </form>
     </div>
