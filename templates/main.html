@@ -26,12 +26,6 @@
     float:
   }
 
-  table {
-    margin: auto;
-    text-align: centers;
-    font-size: 30px;
-  }
-
   legend{
     font-weight: 10px;
     text-align: center;
@@ -39,19 +33,47 @@
   }
 
   fieldset {
+    border-color: #33FF33;
     margin-left: 35px;
     margin-right: 35px;
     text-align: center;
   }
 
   .moodText {
+    float: left;
+    width: 130px;
+    text-align: right;
     font-size: 30px;
   }
 
   label {
     font-size: 30px;
     margin-left: 20px;
+    margin-right: 5px;
   }
+
+  #submitButton {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#resetButton {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
   </style>
   <body>
       <div class="container">
@@ -60,36 +82,36 @@
           <fieldset>
             <legend>Rate Your Mood</legend>
 
-            <div class="moodText">Happiness</div>
+            <label class="moodText">Happiness: </label>
             <label for="happinessMood1">1</label><input type="radio" name="happinessMood" id="happinessMood1">
             <label for="happinessMood2">2</label><input type="radio" name="happinessMood" id="happinessMood2">
             <label for="happinessMood3">3</label><input type="radio" name="happinessMood" id="happinessMood3">
             <label for="happinessMood4">4</label><input type="radio" name="happinessMood" id="happinessMood4">
             <label for="happinessMood5">5</label><input type="radio" name="happinessMood" id="happinessMood5">
-
-            <div class="moodText">Sadness</div>
+            <br>
+            <label class="moodText">Sadness: </label>
             <label for="sadnessMood1">1</label><input type="radio" name="sadnessMood" id="sadnessMood1">
             <label for="sadnessMood2">2</label><input type="radio" name="sadnessMood" id="sadnessMood2">
             <label for="sadnessMood3">3</label><input type="radio" name="sadnessMood" id="sadnessMood3">
             <label for="sadnessMood4">4</label><input type="radio" name="sadnessMood" id="sadnessMood4">
             <label for="sadnessMood5">5</label><input type="radio" name="sadnessMood" id="sadnessMood5">
-
-            <div class="moodText">Pace</div>
+            <br>
+            <label class="moodText">Pace: </label>
             <label for="paceMood1">1</label><input type="radio" name="paceMood" id="paceMood1">
             <label for="paceMood2">2</label><input type="radio" name="paceMood" id="paceMood2">
             <label for="paceMood3">3</label><input type="radio" name="paceMood" id="paceMood3">
             <label for="paceMood4">4</label><input type="radio" name="paceMood" id="paceMood4">
             <label for="paceMood5">5</label><input type="radio" name="paceMood" id="paceMood5">
-
-            <div class="moodText">Focus</div>
-            <label for="paceMood1">1</label><input type="radio" name="paceMood" id="paceMood1">
-            <label for="paceMood2">2</label><input type="radio" name="paceMood" id="paceMood2">
-            <label for="paceMood3">3</label><input type="radio" name="paceMood" id="paceMood3">
-            <label for="paceMood4">4</label><input type="radio" name="paceMood" id="paceMood4">
-            <label for="paceMood5">5</label><input type="radio" name="paceMood" id="paceMood5">
+            <br>
+            <label class="moodText">Focus: </label>
+            <label for="focusMood1">1</label><input type="radio" name="focusMood" id="focusMood1">
+            <label for="focusMood2">2</label><input type="radio" name="focusMood" id="focusMood2">
+            <label for="focusMood3">3</label><input type="radio" name="focusMood" id="focusMood3">
+            <label for="focusMood4">4</label><input type="radio" name="focusMood" id="focusMood4">
+            <label for="focusMood5">5</label><input type="radio" name="focusMood" id="focusMood5">
             <br><br>
-            <input type="submit" name="submit" value="Submit">
-            <input type="reset" name="reset" value="Reset">
+            <input type="submit" name="submit" value="Submit" id="submitButton">
+            <input type="reset" name="reset" value="Reset" id="resetButton">
           </fieldset>
         </form>
       </div>
