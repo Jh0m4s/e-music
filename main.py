@@ -12,31 +12,41 @@ songs = {
 
 }
 
-results = [5,3,2,4]
+class Song():
+  def __init__(self, name, link, ratings):
+    self.name = name
+    self.link = link
+    self.ratings = ratings
+    self.score = None
 
-total = 0
-count = 0
-ans = ""
-key = ""
-lowest_diff = 25
-#laregest_emo = 0
+
+  def findscore(self, result):
+    dif = []
+    for i in range(2):
+      if abs(result[i] - self.ratings[i] == 0):
+        continue
+      dif.append(abs(result[i] - self.ratings[i]))
+    if len(dif) == 0:
+      self.score = -1
+    else:
+      total = 0
+      for i in dif:
+        total += i
+      self.score = total / len(dif)
+
+
+result = [1,1]
+songs = [
+song1 = Song('Can’t Stop the Feeling', 'https://youtu.be/ru0K8uYEZWw', [1,1 ]),
+song1 = Song('doesnt matter the name', 'http::ikwjes,dbfzc', [2,4])
+song1 = Song('doesnt matter the name', 'http::ikwjes,dbfzc', [2,4])
+song1 = Song('doesnt matter the name', 'http::ikwjes,dbfzc', [2,4])
+]
 for song in songs:
-    print song
-    for score in songs[song][1:]:
-        print score
-        print results[count]
-        total += abs(int(score) - int(results[count]))
-        count += 1
-    print total
-    if(total < lowest_diff):
-        lowest_diff = total
-        #ans = songs[0]
-        key = song
-        #print ans
-        print song
-        print('-----> ' + str(lowest_diff))
-    total = 0
-    count = 0
+    song.findscore(result)
+
+song1.findscore(result)
+print song1.score
 
 
 
