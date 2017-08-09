@@ -33,8 +33,15 @@ song2 = Song('Opening the Gates', 'https://www.youtube.com/embed/Q1B9xShJ2kE', [
 song3 = Song('Mad World', 'https://www.youtube.com/embed/hW93CV6m-JU', [1,5,1,1])
 song4 = Song('Marble Machine', 'https://www.youtube.com/embed/IvUU8joBb1Q', [4,2,4,2])
 song5 = Song('Call Me', 'https://www.youtube.com/embed/OugHoTRceyE', [1,5,2,2])
+song6 = Song('September', 'https://www.youtube.com/embed/gZorFBddby0', [5, 1, 1, 3])
+song7 = Song('Alone Time', 'https://www.youtube.com/embed/cw8KbFHPcYU', [1, 3, 1, 3])
+song8 = Song('Breaking Inside', 'https://www.youtube.com/embed/LEx-HYsmOQ8', [1, 4, 1, 1])
+song9 = Song('Geronimo', 'https://www.youtube.com/embed/E-SeaCZE2TM', [3, 1, 1, 4])
+song10 = Song('Walk On Water', 'https://www.youtube.com/embed/u0RoTA1XO8Y', [1, 3, 2, 2])
+song11 = Song('Gold', 'https://www.youtube.com/embed/5H-IA_D3lqY', [3, 1, 1, 2 ])
+song12 = Song('Dapperblook', 'https://www.youtube.com/embed/yeJx04_47Lc', [4,1,4,4])
 
-songs = [song1, song2, song3, song4, song5]
+songs = [song1, song2, song3, song4, song5, song6, song7, song8, song9, song10, song11, song12]
 
 
 
