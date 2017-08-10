@@ -33,7 +33,7 @@
     margin: auto;
     margin-top: 70px;
     width: 600px;
-    height: 625px;
+    height: 800px;
     background-color: white;
   }
   #logo {
@@ -47,6 +47,8 @@
     font-family: gabriola;
     text-align: center;
     font-size: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   fieldset {
     border-color: #33FF33;
@@ -55,16 +57,9 @@
     text-align: center;
   }
   .moodText {
-    float: left;
-    width: 130px;
-    text-align: right;
+    float: center;
+    text-align: center;
     font-size: 30px;
-  }
-
-  label {
-    font-size: 30px;
-    margin-left: 20px;
-    margin-right: 5px;
   }
 
   #submitButton {
@@ -188,7 +183,7 @@ input[type=range]:focus::-ms-fill-upper {
         <form method="post">
           <fieldset>
             <legend>Rate Your Mood</legend>
-            <label class="moodText">Angry: </label>
+            <label class="moodText">Angry</label>
             <!-- <label for="angryMood1">1</label><input type="radio" name="angryMood" value="1" id="angryMood1">
             <label for="angryMood2">2</label><input type="radio" name="angryMood" value="2" id="angryMood2">
             <label for="angryMood3">3</label><input type="radio" name="angryMood" value="3" id="angryMood3">
@@ -196,7 +191,8 @@ input[type=range]:focus::-ms-fill-upper {
             <label for="angryMood5">5</label><input type="radio" name="angryMood" value="5" id="angryMood5"> -->
             <input type="range" id="angryMood" min=20 max=101 name="angryMood">
             <br>
-            <label class="moodText">Happiness: </label>
+            <br>
+            <label class="moodText">Happiness</label>
             <!-- <label for="happinessMood1">1</label><input type="radio" name="happinessMood" value="1" id="happinessMood1">
             <label for="happinessMood2">2</label><input type="radio" name="happinessMood" value="2" id="happinessMood2">
             <label for="happinessMood3">3</label><input type="radio" name="happinessMood" value="3" id="happinessMood3">
@@ -204,7 +200,8 @@ input[type=range]:focus::-ms-fill-upper {
             <label for="happinessMood5">5</label><input type="radio" name="happinessMood" value="5" id="happinessMood5"> -->
             <input type="range" id="happinessMood" min=20 max=101 name="happinessMood">
             <br>
-            <label class="moodText">Sadness: </label>
+            <br>
+            <label class="moodText">Sadness</label>
             <!-- <label for="sadnessMood1">1</label><input type="radio" name="sadnessMood" value="1" id="sadnessMood1">
             <label for="sadnessMood2">2</label><input type="radio" name="sadnessMood" value="2" id="sadnessMood2">
             <label for="sadnessMood3">3</label><input type="radio" name="sadnessMood" value="3" id="sadnessMood3">
@@ -212,7 +209,8 @@ input[type=range]:focus::-ms-fill-upper {
             <label for="sadnessMood5">5</label><input type="radio" name="sadnessMood" value="5" id="sadnessMood5"> -->
             <input type="range" id="sadnessMood" min=20 max=101 name="sadnessMood">
             <br>
-            <label class="moodText">Focus: </label>
+            <br>
+            <label class="moodText">Focus</label>
             <!-- <label for="focusMood1">1</label><input type="radio" name="focusMood" value="1" id="focusMood1">
             <label for="focusMood2">2</label><input type="radio" name="focusMood" value="2" id="focusMood2">
             <label for="focusMood3">3</label><input type="radio" name="focusMood" value="3" id="focusMood3">
@@ -220,7 +218,8 @@ input[type=range]:focus::-ms-fill-upper {
             <label for="focusMood5">5</label><input type="radio" name="focusMood" value="5" id="focusMood5"> -->
             <input type="range" id="focusMood" min=20 max=101 name="focusMood">
             <br>
-            <label class="moodText">Pace: </label>
+            <br>
+            <label class="moodText">Pace</label>
             <!-- <label for="paceMood1">1</label><input type="radio" name="paceMood" value="1" id="paceMood1">
             <label for="paceMood2">2</label><input type="radio" name="paceMood" value="2" id="paceMood2">
             <label for="paceMood3">3</label><input type="radio" name="paceMood" value="3" id="paceMood3">
