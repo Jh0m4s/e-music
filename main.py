@@ -16,7 +16,7 @@ class Song():
 
   def findscore(self, result):
     dif = []
-    for i in range(2):
+    for i in len(result):
       if abs(result[i] - self.ratings[i] == 0):
         continue
       dif.append(abs(result[i] - self.ratings[i]))
