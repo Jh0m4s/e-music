@@ -49,8 +49,14 @@ song18 = Song('Fire', 'https://www.youtube.com/embed/uQHGYgpg3Pg', [4,1,2,1,4])
 song19 = Song('Victorious', 'https://www.youtube.com/embed/agG-yNlFwCY', [3,2,1,1,4])
 song20 = Song('One Me Two Hearts', 'https://www.youtube.com/embed/DnQ-Nk8qHSk', [1,3,2,1,4])
 song21 = Song('Trash Candy', 'https://www.youtube.com/embed/dHmhJcMUTj8', [2,2,1,1,3])
+song22 = Song('Thnks fr Th Mmrs', 'https://www.youtube.com/embed/3jx7SF65wbs', [1,4,2,1,4])
+song23 = Song('Ignorance', 'https://www.youtube.com/embed/6GKjW-TCnu0', [3,1,3,1,4])
+song24 = Song('All I Want', 'https://www.youtube.com/embed/L2RBYHTqHfA', [3,1,3,1,5])
+song25 = Song('Roar', 'https://www.youtube.com/embed/n2f501YWxso', [2,2,2,1,3])
+song26 = Song('Immigrants (We Get The Job Done)', 'https://www.youtube.com/embed/6_35a7sn6ds', [4,1,3,1,4])
+song27 = Song('Diamond Eyes', 'https://www.youtube.com/embed/Mj_hApbc5qg', [4,2,2,1,4])
 
-songs = [song1, song2, song3, song4, song5, song6, song7, song8, song9, song10, song11, song12, song13, song14, song15, song16, song17, song18, song19, song20, song21]
+songs = [song1, song2, song3, song4, song5, song6, song7, song8, song9, song10, song11, song12, song13, song14, song15, song16, song17, song18, song19, song20, song21, song22, song23, song24, song25, song26, song27]
 
 
 
