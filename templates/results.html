@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>e-music</title>
   </head>
   <style>
 
@@ -30,35 +30,32 @@
     font-size: 50px;
     font-weight: bolder;
     font-family: fantasy;
-    padding-bottom: 0;
+    margin-top: 0px;
   }
+
   .video{
     margin: auto;
     display: block;
-    padding-top: 9px;
-  }
-
-  #videoFrame {
-    float: left;
+    border-image: url(tv.png) 30 round;
   }
 
   #emusic{
     padding-top: 10px;
     border-radius: 25px;
   }
+
   #thumbs_up {
     padding-left: 50px;
    }
 
   iframe{
+    margin-top: 0px;
     width: 640px;
     height: 360px;
   }
-
   </style>
   <body>
     <div class="container">
-
       <img src="resources/logo.png" id="logo">
       <h1>{{ song_name }}</h1>
       <iframe src="{{ song_link }}"></iframe>
