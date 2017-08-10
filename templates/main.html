@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+  </head>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>e-music</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <style>
   body{
@@ -69,11 +89,92 @@
     font-size: 16px;
 }
 
-input[type=range]
-{
-  width: 300px;
-  height: 20px;
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 6px 0;
 }
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #28fad1;
+  border-radius: 8px;
+  border: 1.4px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 2.px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 25px;
+  background: rgba(0, 100, 255, 0.95);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.4px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #37fad4;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #28fad1;
+  border-radius: 8px;
+  border: 1.4px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 2.px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 25px;
+  background: rgba(0, 100, 255, 0.95);
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #19face;
+  border: 1.4px solid #010101;
+  border-radius: 16px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #28fad1;
+  border: 1.4px solid #010101;
+  border-radius: 16px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 2.px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 25px;
+  background: rgba(0, 100, 255, 0.95);
+  cursor: pointer;
+  height: 8px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #28fad1;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #37fad4;
+}
+
 
 .socialMediaLogo{
   width: 70px;
@@ -88,39 +189,44 @@ input[type=range]
           <fieldset>
             <legend>Rate Your Mood</legend>
             <label class="moodText">Angry: </label>
-            <label for="angryMood1">1</label><input type="radio" name="angryMood" value="1" id="angryMood1">
+            <!-- <label for="angryMood1">1</label><input type="radio" name="angryMood" value="1" id="angryMood1">
             <label for="angryMood2">2</label><input type="radio" name="angryMood" value="2" id="angryMood2">
             <label for="angryMood3">3</label><input type="radio" name="angryMood" value="3" id="angryMood3">
             <label for="angryMood4">4</label><input type="radio" name="angryMood" value="4" id="angryMood4">
-            <label for="angryMood5">5</label><input type="radio" name="angryMood" value="5" id="angryMood5">
+            <label for="angryMood5">5</label><input type="radio" name="angryMood" value="5" id="angryMood5"> -->
+            <input type="range" id="angryMood" min=20 max=101 name="angryMood">
             <br>
             <label class="moodText">Happiness: </label>
-            <label for="happinessMood1">1</label><input type="radio" name="happinessMood" value="1" id="happinessMood1">
+            <!-- <label for="happinessMood1">1</label><input type="radio" name="happinessMood" value="1" id="happinessMood1">
             <label for="happinessMood2">2</label><input type="radio" name="happinessMood" value="2" id="happinessMood2">
             <label for="happinessMood3">3</label><input type="radio" name="happinessMood" value="3" id="happinessMood3">
             <label for="happinessMood4">4</label><input type="radio" name="happinessMood" value="4" id="happinessMood4">
-            <label for="happinessMood5">5</label><input type="radio" name="happinessMood" value="5" id="happinessMood5">
+            <label for="happinessMood5">5</label><input type="radio" name="happinessMood" value="5" id="happinessMood5"> -->
+            <input type="range" id="happinessMood" min=20 max=101 name="happinessMood">
             <br>
             <label class="moodText">Sadness: </label>
-            <label for="sadnessMood1">1</label><input type="radio" name="sadnessMood" value="1" id="sadnessMood1">
+            <!-- <label for="sadnessMood1">1</label><input type="radio" name="sadnessMood" value="1" id="sadnessMood1">
             <label for="sadnessMood2">2</label><input type="radio" name="sadnessMood" value="2" id="sadnessMood2">
             <label for="sadnessMood3">3</label><input type="radio" name="sadnessMood" value="3" id="sadnessMood3">
             <label for="sadnessMood4">4</label><input type="radio" name="sadnessMood" value="4" id="sadnessMood4">
-            <label for="sadnessMood5">5</label><input type="radio" name="sadnessMood" value="5" id="sadnessMood5">
+            <label for="sadnessMood5">5</label><input type="radio" name="sadnessMood" value="5" id="sadnessMood5"> -->
+            <input type="range" id="sadnessMood" min=20 max=101 name="sadnessMood">
             <br>
             <label class="moodText">Focus: </label>
-            <label for="focusMood1">1</label><input type="radio" name="focusMood" value="1" id="focusMood1">
+            <!-- <label for="focusMood1">1</label><input type="radio" name="focusMood" value="1" id="focusMood1">
             <label for="focusMood2">2</label><input type="radio" name="focusMood" value="2" id="focusMood2">
             <label for="focusMood3">3</label><input type="radio" name="focusMood" value="3" id="focusMood3">
             <label for="focusMood4">4</label><input type="radio" name="focusMood" value="4" id="focusMood4">
-            <label for="focusMood5">5</label><input type="radio" name="focusMood" value="5" id="focusMood5">
+            <label for="focusMood5">5</label><input type="radio" name="focusMood" value="5" id="focusMood5"> -->
+            <input type="range" id="focusMood" min=20 max=101 name="focusMood">
             <br>
             <label class="moodText">Pace: </label>
-            <label for="paceMood1">1</label><input type="radio" name="paceMood" value="1" id="paceMood1">
+            <!-- <label for="paceMood1">1</label><input type="radio" name="paceMood" value="1" id="paceMood1">
             <label for="paceMood2">2</label><input type="radio" name="paceMood" value="2" id="paceMood2">
             <label for="paceMood3">3</label><input type="radio" name="paceMood" value="3" id="paceMood3">
             <label for="paceMood4">4</label><input type="radio" name="paceMood" value="4" id="paceMood4">
-            <label for="paceMood5">5</label><input type="radio" name="paceMood" value="5" id="paceMood5">
+            <label for="paceMood5">5</label><input type="radio" name="paceMood" value="5" id="paceMood5"> -->
+            <input type="range" id="paceMood" min=20 max=101 name="paceMood">
             <br><br>
             <input type="submit" name="submit" value="Submit" id="submitButton">
             <input type="reset" name="reset" value="Reset" id="resetButton">
@@ -131,5 +237,9 @@ input[type=range]
         <a target="_blank" href="https://www.instagram.com/emusiccssix/"><img src="resources/instagramLogo.jpg" class="socialMediaLogo"></a>
         <a target="_blank" href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><img src="resources/snapchatLogo.jpg" class="socialMediaLogo"></a>
       </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
