@@ -40,7 +40,7 @@ song9 = Song('Geronimo', 'https://www.youtube.com/embed/E-SeaCZE2TM?&autoplay=1'
 song10 = Song('Walk On Water', 'https://www.youtube.com/embed/hpDKd40Y71w?&autoplay=1', [1,1,3,2,1])
 song11 = Song('Gold', 'https://www.youtube.com/embed/TC2YeGEoN1w?&autoplay=1', [1,3,2,1,2])
 song12 = Song('Dapperblook', 'https://www.youtube.com/embed/yeJx04_47Lc?&autoplay=1', [1,4,1,4,4])
-song13 = Song('Fire and Flames', 'https://www.youtube.com/embed/Wbrrma9Cutk?&autoplay=1', [1,1,1,1,5])
+song13 = Song('Through the Fire and Flames', 'https://www.youtube.com/embed/Wbrrma9Cutk?&autoplay=1', [1,1,1,1,5])
 song14 = Song('Monster', 'https://www.youtube.com/embed/u9NStVkSCuk?&autoplay=1', [5,1,2,1,3])
 song15 = Song('Break','https://www.youtube.com/embed/SJJSQD12v04?&autoplay=1', [3,1,2,1,4])
 song16 = Song('Enemies', 'https://www.youtube.com/embed/3z9Kmla_ceA?&autoplay=1', [5,1,1,1,4])
@@ -98,7 +98,7 @@ class MainHandler(webapp2.RequestHandler):
         sad = int(self.request.get('sadnessMood'))
         focus = int(self.request.get('focusMood'))
         pace = int(self.request.get('paceMood'))
-        result = [angry/20, happy/20, sad/20, focus/20, pace/20]
+        result = [angry, happy, sad, focus, pace]
         song_name=""
         song_link=""
         lower_score = 20
